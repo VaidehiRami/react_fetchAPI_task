@@ -23,7 +23,7 @@ function App() {
     setIsLoading(false);
   }
   return (
-    <>
+    <React.Fragment>
       <section>
         <button onClick={fetchMoviesHandler}>Fetch Movies</button>
       </section>
@@ -32,7 +32,7 @@ function App() {
         {!isLoading && movies.length === 0 && <p>Found no movies.</p>}
         {isLoading && <p>Loading...</p>}
       </section>
-    </>
+    </React.Fragment>
   );
 }
 
